@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --bg-1: #2240c7;
+    --bg-2: #1a1024;
+    --muted: rgba(13, 59, 85, 0.08);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,var(--bg-1),var(--bg-2));
+    color: #fff;
+    padding: 32px;
+}
+
+.profiles{
+    background: rgba(255,255,255,0.05);
+    padding: 28px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 920px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.profiles h1{
+    font-size: 28px;
+    margin-bottom: 18px;
+    letter-spacing: 0.6px;
+}
+
+.cards{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    padding: 16px;
+    border-radius: 12px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover{ transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.35); }
+
+.avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#584e48,#de6262);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.info h2{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.info a{
+    display: inline-block;
+    color: #fff;
+    background: var(--muted);
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .12s ease, transform .12s ease;
+}
+
+.info a:hover{ background: rgba(255,255,255,0.14); transform: translateY(-2px); }
+
+@media (max-width: 600px){
+    .card{ width: 100%; justify-content: flex-start; }
+    .profiles{ padding: 18px; }
+}

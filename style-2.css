@@ -3,3 +3,109 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    background-color: rgb(48, 46, 46);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.segunda-pagina {
+    background-color: rgb(136, 135, 127);
+    background-image: url("assets/imagem.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+h1, h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px 0 20px 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 70px;
+    color: rgb(233, 224, 224);
+    line-height: 1.6;
+}
+
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+.imagem-ingredientes {
+    float: right;
+    max-width: 500px;
+    width: 45%;
+    margin: 0 0 20px 20px;
+}
+
+.imagem-bolo {
+    max-width: 700px;
+    width: 200%;
+    margin: 30px auto;
+}
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #ebebeb;
+    color: #131212;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #f3f3f3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-buttons {
+    text-align: center;
+}
+
+.navigation-buttons .button {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+ol, ul {
+    padding: 20px 80px;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 15px;
+    color: rgb(12, 12, 11);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
