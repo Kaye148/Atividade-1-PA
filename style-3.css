@@ -94,3 +94,17 @@ body{
     .card{ width: 100%; justify-content: flex-start; }
     .profiles{ padding: 18px; }
 }
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    color: #131212;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

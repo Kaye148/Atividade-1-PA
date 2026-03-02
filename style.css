@@ -62,12 +62,16 @@ img {
     justify-content: center;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    box-shadow: 5px 5px 15px;
-    gap: 50px;
-    color: azure;
-    border-radius: ;
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #ebebeb;
+    color: #131212;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
